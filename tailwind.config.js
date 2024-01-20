@@ -5,7 +5,7 @@ export default {
     screens: {
       sm: '480px',
       md: '768px',
-      lg: '992px',
+      lg: '1024px',
       xl: '1280px',
     },
     fontFamily: {
@@ -13,13 +13,14 @@ export default {
       secondary: 'Open Sans',
     },
     colors: {
+      black: '#000000',
       jet: '#333333',
       dim: '#666666',
       french: '#BDC3C7',
     },
     extend: {
       backgroundImage: {
-        home: 'url("")',
+        home: 'url("/home.jpg")',
       },
     },
   },
