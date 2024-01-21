@@ -9,12 +9,12 @@ const Home = () => {
         <h4 className="font-primary w-[80%] leading-[120%] text-center">
           Transformamos Sonhos em Espaços Extraordinários
         </h4>
-        <p
+        <a
           href="#"
           className="section-home-button lg:section-home-button-effect"
         >
           Conheça nossos Projetos
-        </p>
+        </a>
       </div>
     </section>
   );

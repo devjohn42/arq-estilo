@@ -1,8 +1,10 @@
+import Header from './components/global/Header';
 import Home from './components/Home';
 
 const App = () => {
   return (
     <div>
+      <Header />
       <Home />
     </div>
     // <h1 className="font-primary">Arq Estilo</h1>
