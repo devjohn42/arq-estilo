@@ -1,3 +1,4 @@
+import About from './components/About';
 import Header from './components/global/Header';
 import Home from './components/Home';
 
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <Header />
       <Home />
+      <About />
     </div>
     // <h1 className="font-primary">Arq Estilo</h1>
     // <h3 className="font-secondary font-medium">Sobre</h3>

@@ -21,6 +21,7 @@ export default {
     extend: {
       backgroundImage: {
         home: 'url("/home.jpg")',
+        about: 'url("/about.jpg")'
       },
     },
   },
