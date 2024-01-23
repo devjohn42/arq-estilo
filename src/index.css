@@ -108,10 +108,13 @@
     @apply text-justify w-[90%] lg:w-[80%] lg:min-w-[350px] lg:max-w-[750px];
   }
   .section-about-image {
-    @apply relative bg-about bg-cover w-[240px] sm:w-[280px] md:w-[450px] lg:max-w-[280px] h-[345.12px] sm:h-[380.53px] md:h-[612.39px] lg:max-h-[380.53px] border-[1px] border-[#fff];
+    @apply relative bg-about bg-cover w-[240px] sm:w-[280px] md:w-[450px] lg:max-w-[350px] h-[345.12px] sm:h-[380.53px] md:h-[612.39px] lg:max-h-[475.67px] border-[1px] border-[#fff];
   }
   .section-about-image-glass {
     @apply w-full h-full bg-black/40 absolute z-10;
+  }
+  .parallax-image {
+    @apply w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[1000px];
   }
 }
 @layer utilities {

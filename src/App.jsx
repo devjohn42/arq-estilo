@@ -1,6 +1,7 @@
 import About from './components/About';
 import Header from './components/global/Header';
 import Home from './components/Home';
+import Parallax from './components/Parallax';
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Header />
       <Home />
       <About />
+      <Parallax />
     </div>
     // <h1 className="font-primary">Arq Estilo</h1>
     // <h3 className="font-secondary font-medium">Sobre</h3>
