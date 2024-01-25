@@ -46,7 +46,7 @@
     @apply text-[1rem] sm:text-[1.034rem] md:text-[1.116rem] lg:text-[1.179rem] xl:text-[1.25rem];
   }
   header {
-    @apply md:w-[60%] lg:w-[50%] bg-jet/60 backdrop-blur-[5px] p-[1rem_1rem] md:p-[1.5rem_0rem] lg:p-[1.5rem_0rem]  
+    @apply md:w-[60%] lg:w-[50%] bg-jet/70 backdrop-blur-[5px] p-[1rem_1rem] md:p-[1.5rem_0rem] lg:p-[1.5rem_0rem]  
     fixed top-[40px] right-[0] border-l-[0.5px] border-t-[0.5px] border-b-[0.5px] z-30;
   }
 
@@ -115,6 +115,21 @@
   }
   .parallax-image {
     @apply w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[1000px];
+  }
+  .section-services {
+    @apply w-full p-[2rem_0rem] md:p-[4rem_0rem] lg:p-[4rem_0rem] flex flex-col gap-y-2 md:gap-y-4 lg:gap-y-8 items-center;
+  }
+  .section-services-container {
+    @apply w-[95%] relative p-[2rem_0rem] md:p-[4rem_0rem] lg:p-[4rem_0rem] flex flex-col gap-y-4 items-center;
+  }
+  .section-service-content {
+    @apply w-full flex flex-col gap-y-4 lg:flex-row items-center justify-evenly;
+  }
+  .section-service-content-image {
+    @apply bg-cover bg-center w-[320px] h-[250px] sm:w-[450px] sm:h-[300px] md:w-[480px] lg:w-[520px] lg:h-[380px] border-[1px] border-[#fff];
+  }
+  .section-services-nav {
+    @apply w-[320px] sm:w-[450px] md:w-[480px] lg:absolute lg:bottom-3 lg:left-3 flex justify-center lg:justify-normal gap-x-3 md:gap-x-4;
   }
 }
 @layer utilities {

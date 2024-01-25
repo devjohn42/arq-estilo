@@ -1,8 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { MdMenuOpen, MdClose } from 'react-icons/md';
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
+
+  const watchingResize = () => {
+    if (window.innerWidth >= 768) {
+      setOpenNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', watchingResize);
+    // console.log(window.innerWidth)
+  }, []);
 
   // const changeNav = () => {
   //   if (window.innerWidth < 768) {

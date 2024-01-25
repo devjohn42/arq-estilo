@@ -21,7 +21,11 @@ export default {
     extend: {
       backgroundImage: {
         home: 'url("/home.jpg")',
-        about: 'url("/about.jpg")'
+        about: 'url("/about.jpg")',
+        project1: 'url("/project1.jpg")',
+        project2: 'url("/project2.jpg")',
+        project3: 'url("/project3.jpg")',
+        project4: 'url("/project4.jpg")',
       },
     },
   },
