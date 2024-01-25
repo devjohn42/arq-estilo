@@ -3,16 +3,18 @@ import Home from './components/Home';
 import About from './components/About';
 import Parallax from './components/Parallax';
 import Services from './components/Services/Services';
+import Projects from './components/Projects/Projects';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Home />
       <About />
       <Parallax />
       <Services />
-    </div>
+      <Projects />
+    </>
     // <h1 className="font-primary">Arq Estilo</h1>
     // <h3 className="font-secondary font-medium">Sobre</h3>
     // <h3>Arq Estilo</h3>

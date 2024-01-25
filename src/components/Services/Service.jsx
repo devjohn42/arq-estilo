@@ -7,7 +7,7 @@ const Service = ({ title, description, img }) => {
         <h5>{title}</h5>
         <p>{description}</p>
       </div>
-      <div className={img + 'section-service-content-image'}></div>
+      <div className={img + ' section-service-content-image'}></div>
     </div>
   );
 };
