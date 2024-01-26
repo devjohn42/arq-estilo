@@ -1,9 +1,10 @@
-import Header from './components/global/Header';
+import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Parallax from './components/Parallax';
 import Services from './components/Services/Services';
 import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Parallax />
       <Services />
       <Projects />
+      <Footer />
     </>
     // <h1 className="font-primary">Arq Estilo</h1>
     // <h3 className="font-secondary font-medium">Sobre</h3>
