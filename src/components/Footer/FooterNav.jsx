@@ -1,22 +1,47 @@
-import React from 'react';
+import { Link } from 'react-scroll';
 
 const FooterNav = () => {
   return (
     <div className="flex flex-col items-start gap-y-1">
       <h5>Navegação</h5>
       <div className="flex flex-col items- gap-y-1">
-        <a href="" className="w-fit">
+        <Link
+          to="home"
+          className="nav-link"
+          smooth={true}
+          duration={1000}
+          delay={300}
+        >
           Início
-        </a>
-        <a href="" className="w-fit">
+        </Link>
+        <Link
+          to="about"
+          className="nav-link"
+          smooth={true}
+          duration={1000}
+          delay={300}
+        >
           Sobre
-        </a>
-        <a href="" className="w-fit">
+        </Link>
+        <Link
+          to="services"
+          className="nav-link"
+          smooth={true}
+          duration={1000}
+          delay={300}
+          offset={-130}
+        >
           Serviços
-        </a>
-        <a href="" className="w-fit">
+        </Link>
+        <Link
+          to="projects"
+          className="nav-link"
+          smooth={true}
+          duration={1000}
+          delay={300}
+        >
           Projetos
-        </a>
+        </Link>
       </div>
     </div>
   );

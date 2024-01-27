@@ -12,10 +12,10 @@ const Services = () => {
   };
 
   return (
-    <section className="section-services">
+    <section className="section-services" id="services">
+      <Line />
       <SectionTitle title="Nossos Serviços" />
       <div className="w-full flex flex-col items-center">
-        <Line />
         <div className="section-services-container">
           <Service
             title={services[activeIndex].title}

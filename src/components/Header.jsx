@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 import { MdMenuOpen, MdClose } from 'react-icons/md';
 
 const Header = () => {
@@ -15,11 +16,11 @@ const Header = () => {
     // console.log(window.innerWidth)
   }, []);
 
-  // const changeNav = () => {
-  //   if (window.innerWidth < 768) {
-  //     setMenuOpen(!openNav);
-  //   }
-  // };
+  const changeNav = () => {
+    if (window.innerWidth < 768) {
+      setOpenNav(!openNav);
+    }
+  };
 
   return (
     <header>
@@ -31,21 +32,47 @@ const Header = () => {
         )}
       </div>
       <nav className={openNav ? 'mobile-nav' : 'desktop-nav'}>
-        <a href="#" className="nav-link md:nav-link-pseudo-before-effect">
+        <Link
+          to="home"
+          className="nav-link md:nav-link-pseudo-before-effect"
+          smooth={true}
+          duration={1000}
+          delay={300}
+          onClick={() => changeNav()}
+        >
           Início
-        </a>
-        <a href="#" className="nav-link md:nav-link-pseudo-before-effect">
+        </Link>
+        <Link
+          to="about"
+          className="nav-link md:nav-link-pseudo-before-effect"
+          smooth={true}
+          duration={1000}
+          delay={300}
+          onClick={() => changeNav()}
+        >
           Sobre
-        </a>
-        <a href="#" className="nav-link md:nav-link-pseudo-before-effect">
+        </Link>
+        <Link
+          to="services"
+          className="nav-link md:nav-link-pseudo-before-effect"
+          smooth={true}
+          duration={1000}
+          delay={300}
+          offset={-130}
+          onClick={() => changeNav()}
+        >
           Serviços
-        </a>
-        <a href="#" className="nav-link md:nav-link-pseudo-before-effect">
+        </Link>
+        <Link
+          to="projects"
+          className="nav-link md:nav-link-pseudo-before-effect"
+          smooth={true}
+          duration={1000}
+          delay={300}
+          onClick={() => changeNav()}
+        >
           Projetos
-        </a>
-        <a href="#" className="nav-link md:nav-link-pseudo-before-effect">
-          Contato
-        </a>
+        </Link>
       </nav>
     </header>
   );

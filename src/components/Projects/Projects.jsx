@@ -5,9 +5,9 @@ import SectionProjects from './SectionProjects';
 
 const Projects = () => {
   return (
-    <section className="section-projects">
-      <SectionTitle title="Projetos" />
+    <section className="section-projects" id='projects'>
       <Line />
+      <SectionTitle title="Projetos" />
       <SectionProjects />
       <Line />
     </section>

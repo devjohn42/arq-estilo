@@ -47,8 +47,8 @@
     @apply text-[1rem] sm:text-[1.034rem] md:text-[1.116rem] lg:text-[1.179rem] xl:text-[1.25rem];
   }
   header {
-    @apply md:w-[60%] lg:w-[50%] bg-jet/70 backdrop-blur-[5px] p-[1rem_1rem] md:p-[1.5rem_0rem] lg:p-[1.5rem_0rem]  
-    absolute top-[40px] right-[0] border-l-[0.5px] border-t-[0.5px] border-b-[0.5px] z-30;
+    @apply md:w-[40%] bg-jet/70 backdrop-blur-[5px] p-[1rem_1rem] md:p-[1.5rem_0rem] lg:p-[1.5rem_0rem]  
+    fixed top-[40px] right-[0] border-l-[0.5px] border-t-[0.5px] border-b-[0.5px] z-30;
   }
   footer {
     @apply bg-black/50 w-full p-[1.5rem_0rem] flex flex-col gap-y-6 lg:gap-y-8;
@@ -85,7 +85,7 @@
     @apply hidden md:flex md:gap-x-[25px] lg:gap-x-[30px] md:ml-4 lg:ml-8 relative;
   }
   .nav-link {
-    @apply relative;
+    @apply relative w-fit md:cursor-pointer;
   }
   .section-home {
     @apply bg-home bg-cover bg-bottom w-full h-screen relative;

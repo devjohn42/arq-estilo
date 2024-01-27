@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section className="section-home">
+    <section className="section-home" id='home'>
       <div className="section-home-glass"></div>
       <div className="section-home-container">
         <h1 className="font-primary leading-[120%]">ArqEstilo</h1>
