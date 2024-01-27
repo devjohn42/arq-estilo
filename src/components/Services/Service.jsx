@@ -1,13 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { animations } from '../../data/animations';
 
 const Service = ({ title, description, img }) => {
   return (
     <div className="section-service-content">
-      <div className="w-[320px] sm:w-[450px] md:w-[480px]">
+      <motion.div
+        className="w-[320px] sm:w-[450px] md:w-[480px]"
+        {...animations.leftToRight}
+      >
         <h5>{title}</h5>
         <p>{description}</p>
-      </div>
-      <div className={img + ' section-service-content-image'}></div>
+      </motion.div>
+      <motion.div
+        className={img + ' section-service-content-image'}
+        {...animations.rightToLeft}
+      ></motion.div>
     </div>
   );
 };

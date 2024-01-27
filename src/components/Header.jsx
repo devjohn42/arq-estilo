@@ -48,6 +48,7 @@ const Header = () => {
           smooth={true}
           duration={1000}
           delay={300}
+          offset={-60}
           onClick={() => changeNav()}
         >
           Sobre

@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import SectionTitle from '../global/SectionTitle';
 import Line from '../global/Line';
 import Service from './Service';
+import { motion } from 'framer-motion';
 import { services } from '../../data/services';
+import { animations } from '../../data/animations';
 
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -22,7 +24,7 @@ const Services = () => {
             description={services[activeIndex].description}
             img={services[activeIndex].image}
           />
-          <nav className="section-services-nav">
+          <motion.nav className="section-services-nav" {...animations.rotateToLeft}>
             {services.map((element) => {
               return (
                 <p
@@ -38,7 +40,7 @@ const Services = () => {
                 </p>
               );
             })}
-          </nav>
+          </motion.nav>
         </div>
         <Line />
       </div>

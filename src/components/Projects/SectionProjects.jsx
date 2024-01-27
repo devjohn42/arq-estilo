@@ -1,14 +1,16 @@
 import React from 'react';
 import Project from './Project';
 import { projects } from '../../data/projects';
+import { motion } from 'framer-motion';
+import { animations } from '../../data/animations';
 
 const SectionProjects = () => {
   return (
-    <div className="section-projects-container">
+    <motion.div className="section-projects-container" {...animations.showProjects}>
       {projects.map((img, index) => {
         return <Project img={img} key={index} />;
       })}
-    </div>
+    </motion.div>
   );
 };
 

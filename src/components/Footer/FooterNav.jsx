@@ -20,6 +20,7 @@ const FooterNav = () => {
           smooth={true}
           duration={1000}
           delay={300}
+          offset={-60}
         >
           Sobre
         </Link>
