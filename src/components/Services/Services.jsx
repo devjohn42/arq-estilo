@@ -24,7 +24,10 @@ const Services = () => {
             description={services[activeIndex].description}
             img={services[activeIndex].image}
           />
-          <motion.nav className="section-services-nav" {...animations.rotateToLeft}>
+          <motion.nav
+            className="section-services-nav"
+            {...animations.rotateToLeft}
+          >
             {services.map((element) => {
               return (
                 <p

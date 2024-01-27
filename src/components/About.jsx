@@ -1,19 +1,20 @@
 import React from 'react';
 import SectionTitle from './global/SectionTitle';
 import Line from './global/Line';
-import {motion} from "framer-motion"
+import { motion } from 'framer-motion';
 import { animations } from '../data/animations';
-
-
 
 const About = () => {
   return (
-    <section className="section-about" id='about'>
+    <section className="section-about" id="about">
       <Line />
       <div className="section-about-container">
         <div className="section-about-content">
-          <SectionTitle title="Sobre"/>
-          <motion.p className="section-about-content-description" {...animations.leftToRight}>
+          <SectionTitle title="Sobre" />
+          <motion.p
+            className="section-about-content-description"
+            {...animations.leftToRight}
+          >
             Somos uma firma de arquitetura e design dedicada a transformar
             visões em realidade. Nossa equipe de profissionais apaixonados e
             experientes trabalha em estreita colaboração com cada cliente,
